@@ -20,6 +20,12 @@ public class Book {
     private int price;
     private int publishedYear;
 
+
+
+    public Book(Long id) {
+        this.id = id;
+    }
+
     public Book(String title, String author, String isbn, int price, int publishedYear) {
         this.title = title;
         this.author = author;
@@ -46,6 +52,14 @@ public class Book {
 
     public int getPublishedYear() {
         return publishedYear;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 
     @Override

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class BookService {
 
+    //Repository는 Service에 만든다 + 생성자
     BookRepository bookRepository;
 
     public BookService(BookRepository bookRepository) {
